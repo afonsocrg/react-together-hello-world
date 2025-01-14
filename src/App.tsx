@@ -1,14 +1,13 @@
-import { useStateTogether } from 'react-together';
-import { Header } from './components';
-import './App.css';
+import { useStateTogether } from "react-together";
+import "./App.css";
+import Layout from "./components/Layout";
 
 function App() {
-  const [count, setCount] = useStateTogether('count', 0);
+  const [count, setCount] = useStateTogether("count", 0);
 
   return (
-    <div className="flex flex-col space-between">
-      <Header />
-      <div className="mt-10">
+    <Layout>
+      <div className="flex items-center justify-center w-full h-full">
         <button
           className="p-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg border border-blue-600"
           onClick={() => setCount((count) => count + 1)}
@@ -16,7 +15,7 @@ function App() {
           Count is {count}
         </button>
       </div>
-    </div>
+    </Layout>
   );
 }
 
