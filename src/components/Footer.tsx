@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-export default function Footer() {
+export function Footer() {
   const [showInfo, setShowInfo] = useState(false);
 
   const toggleInfo = () => {
@@ -16,12 +16,12 @@ export default function Footer() {
           </p>
           <p>👉 Make sure your browser is configured to run WebContainers.</p>
           <p>
-            For more info, check out{" "}
+            For more info, check out{' '}
             <a
               target="_blank"
               href="https://developer.stackblitz.com/platform/webcontainers/browser-config"
             >
-              Guide
+              this guide
             </a>
           </p>
         </div>
@@ -43,14 +43,14 @@ export default function Footer() {
         {/* New Tab Button */}
         <a
           className="py-[0.5rem] rounded-lg border border-gray-800 bg-blue-500 shadow-xl w-full hover:bg-blue-600 group no-underline cursor-pointer"
-          style={{ boxShadow: "1px 3px 0px 0px #374151" }}
+          style={{ boxShadow: '1px 3px 0px 0px #374151' }}
           href="."
           onClick={(e) => {
             e.preventDefault(); // Prevent default link behavior
             window.open(
-              ".",
-              "_blank",
-              "width=800,height=600,resizable=yes,popup=1"
+              '.',
+              '_blank',
+              'width=800,height=600,resizable=yes,popup=1'
             );
           }}
         >
@@ -62,7 +62,7 @@ export default function Footer() {
         {/* Info Button */}
         <div
           className="py-[0.5rem] rounded-lg border border-gray-800 bg-blue-200 shadow-xl px-[0.5rem] group hover:bg-blue-300 cursor-pointer"
-          style={{ boxShadow: "1px 3px 0px 0px #374151" }}
+          style={{ boxShadow: '1px 3px 0px 0px #374151' }}
           onClick={toggleInfo}
         >
           <span className="no-underline text-lg tracking-tight text-gray-800">

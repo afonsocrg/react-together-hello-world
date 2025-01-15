@@ -42,7 +42,8 @@ function HelpDialogExpanded({ onCollapse }: HelpDialogExpandedProps) {
         on how to do it!
       </p>
       <p>
-        Worry not, this won't happen when you deploy or run this code locally!!
+        Worry not, this just happens when the code runs inside WebContainers. If
+        you deploy this, or run locally, this won't happen!!
       </p>
     </div>
   );

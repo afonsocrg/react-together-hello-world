@@ -1,4 +1,4 @@
-import reactTogetherLogo from "../assets/react-together.svg";
+import reactTogetherLogo from '../assets/react-together.svg';
 
 export function Header() {
   return (
